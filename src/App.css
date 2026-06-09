@@ -1,0 +1,38 @@
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    padding-top: 20px;
+    animation: fadeText 5s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeText {
+    0% {  transform: translateY(-10px); }
+    50% {  transform: translateY(0); }
+    100% {  transform: translateY(-10px); }
+}
+
+.modal-button {
+    background-color: #7792bd;
+    width: 200px;
+    height: 30px;
+    transform: scale(1);
+    border: none;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.modal-button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px #FF7043;
+}
+.modal-input {
+    width: 200px;
+    height: 30px;
+}
