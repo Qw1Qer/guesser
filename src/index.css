@@ -115,4 +115,20 @@ svg *:focus {
   outline: none;
 }
 
+audio::-webkit-media-controls-panel {
+  background-color: #FF7043; /* Задайте любой цвет */
+}
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: black;  /* Белый цвет таймера */
+}
 
+audio::-webkit-media-controls-play-button {
+  background-color: black;  /* Синяя кнопка play */
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #08060d; /* или используйте background-color */
+  border-radius: 50% ;
+}

@@ -59,7 +59,7 @@ const ChosePanel = () => {
         <>
         <div className="chose-panel">
             <div className='hear'>Слушай</div>
-            <audio src={newOption.sound} controls></audio>
+            <audio src={newOption.sound} controls controlsList="nodownload noplaybackrate"></audio>
             <button className='panel-button' onClick={onHandleArea} disabled={trueValue}>Выбрать</button>
             <button className='panel-button' onClick={onNextArea} disabled={!trueValue}>Next</button>
         </div>
